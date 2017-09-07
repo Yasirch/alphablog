@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+   display: -webkit-flex;
+   display: flex;
+  -webkit-justify-content: center;
+   justify-content:center;
+   background-color: gray;
+   color: white;
+   padding-top:20px;
+   padding-bottom:20px;
+   }
+   
+ul { 
+ display: -webkit-flex;
+ display: flex;   
+ style: none;
+ list-style-type: none;
+ text-style: none;
+ background-color: #333333;
+ }
+ 
+
+li {
+   -webkit-flex: 1;
+   flex: 1;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+article {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-align-content: baseline;
+  align-content: baseline;
+  border-bottom: 1px solid gray;
+  padding-bottom:20px;
+  }
+  
+ .item_left {
+   border-left : 1px solid gray;
+    padding-left: 10px;
+  -webkit-flex: 1;
+   flex: 1;
+ }
+ 
+ .item_right {
+  
+  -webkit-flex: 1;
+   flex: 1;
+ }
+ 
+table, td, th{ 
+  border: 1px solid black; 
+  text-align: center;
+  background-color: #e0d5d5;
+ }
+ 
+ div.button {
+  align: center;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.cities {
+
+
+}
+footer {
+   display: -webkit-flex;
+   display: flex;
+   margin-top: auto;
+   text-align: center-left;
+   color: white;
+   background-color: gray;
+   -webkit-justify-content: center;
+   justify-content:center;
+   padding-top:10px;
+   padding-bottom:10px;
+}
+ 
+</style>
+</head>
+<body>
+<header>
+<h1> Welcome to My World </h1>
+</header>
+
+<ul>
+<li><a href:"#home"> Home </a> </li>
+<li><a href:"#news"> News </a> </li>
+<li><a href:"#contact"> Contact </a> </li>
+<li><a href:"#home"> About </a> </li>
+</ul>
+
+
+<article>
+<div class="item_left">
+<h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div>
+<div class="item_right">
+<table width="90%"> 
+<h1 id="demo">The Country's Revenue </h1>
+<caption style="font-weight: bold", "text-style: underline" > Please have a look at the table </caption>
+
+<tr>
+ <th> Month </th>
+ <th> Budget </th>
+</tr>
+<tr>
+<td> August </td>
+<td> September </td>
+</tr>
+</table>
+<div class="button">
+ <button type="button" onclick="myFunction(1)"> Change Heading to Red Color </button>
+<button type="button" onclick="myFunction(2)"> Change Heading to Blue Color </button>
+</div>
+</div>
+</article>
+<div class="cities">
+<h2>Paris</h2>
+<p>Paris is the capital and most populous city of France. Situated on the Seine River, it is at the heart of the Île-de-France region, also known as the région parisienne.</p>
+ <p>Within its metropolitan area is one of the largest population centers in Europe, with over 12 million inhabitants.</p>
+</div>
+<script>
+ function myFunction(change){
+ if (change==1) {
+  document.getElementById("demo").style.color = "red";
+ }
+ else {
+  document.getElementById("demo").style.color = "blue";
+ }
+ 
+ }
+ </script>
+ <%= link_to 'Home', root_path %>
+ <footer>
+ <div> Yasir Anwar Company &reg </div>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+   display: -webkit-flex;
+   display: flex;
+  -webkit-justify-content: center;
+   justify-content:center;
+   background-color: gray;
+   color: white;
+   padding-top:20px;
+   padding-bottom:20px;
+   }
+   
+ul { 
+ display: -webkit-flex;
+ display: flex;   
+ style: none;
+ list-style-type: none;
+ text-style: none;
+ background-color: #333333;
+ }
+ 
+
+li {
+   -webkit-flex: 1;
+   flex: 1;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+footer {
+   display: -webkit-flex;
+   display: flex;
+   margin-top: auto;
+   text-align: center-left;
+   color: white;
+   background-color: gray;
+   -webkit-justify-content: center;
+   justify-content:center;
+   padding-top:10px;
+   padding-bottom:10px;
+}
+ 
+</style>
+</head>
+<body>
+<header>
+<h1> Welcome to My World </h1>
+</header>
+
+<ul>
+<li><a href:"#home"> Home </a> </li>
+<li><a href:"#news"> News </a> </li>
+<li><a href:"#contact"> Contact </a> </li>
+<li><a href:"#home"> About </a> </li>
+</ul>
+
+<h1> This is all about you </h1>
+
+ <%= link_to 'Home', root_path %>
+ <footer>
+ <div> Yasir Anwar Company &reg </div>
+ </footer>
+</body>
+</html>
